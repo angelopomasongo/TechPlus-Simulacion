@@ -11,94 +11,55 @@
 
 <body>
     <header>
-            <div class="logo">
-                <img src="static/images/compu.png" alt="Compu" class="img-logo">
-                <div>
-                    <span class="color-negro">Tech</span><span class="color-azul">PLus</span>
-                    <p class="descripcion">Soluciones Informaticas</p>
-                </div>
-                <div class="links">
-                    <a href="#">Inicio</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Proyectos</a>
-                    <a href="#">Contacto</a>
-                </div>
+        <div class="logo">
+            <img src="static/images/compu.png" alt="Compu" class="img-logo">
+            <div>
+                <span class="color-negro">Tech</span><span class="color-azul">Plus</span>
+                <p class="descripcion">Soluciones Informaticas</p>
             </div>
-            <div class="controles">
-                <!-- Se agregó id="correo" -->
-                <input type="text" id="correo" placeholder="Buscar Servicios">
-                <!-- Se agregó onclick="mostrarCorreo()" -->
-                <button class="btn-login" onclick="mostrarCorreo()">Buscar</button>
-                </span>
+            <div class="links">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Contacto</a>
             </div>
+        </div>
+        <div class="controles">
+            <!-- Se agregó id="correo" -->
+            <input type="text" id="correo" placeholder="Buscar Servicios">
+            <!-- Se agregó onclick="mostrarCorreo()" -->
+            <button class="btn-login" onclick="mostrarCorreo()"> Buscar</button>
+        </div>
     </header>
-
-    <nav class="menu">
-        <div class="item-menu">
-            <img src="static/images/enchiladas.jpg" alt="Enchiladas" class="img-menu">
-            <p>Enchiladas</p>
-        </div>
-        <div class="item-menu">
-            <img src="static/images/tacos.jpg" alt="Tacos" class="img-menu">
-            <p>Tacos</p>
-        </div>
-        <div class="item-menu">
-            <img src="static/images/flautas.jpg" alt="Flautas" class="img-menu">
-            <p>Flautas</p>
-        </div>
-        <div class="item-menu">
-            <img src="static/images/gorditas.jpg" alt="Gorditas" class="img-menu">
-            <p>Gorditas</p>
-        </div>
-        <div class="item-menu">
-            <img src="static/images/tostadas.jpg" alt="Tostadas" class="img-menu">
-            <p>Tostadas</p>
-        </div>
-        <div class="item-menu">
-            <img src="static/images/enfrijoladas.jpg" alt="Enfrijoladas" class="img-menu">
-            <p>Enfrijoladas</p>
-        </div>
-    </nav>
-
-    <main>
-        <div class="seccion-gris">
-            <div class="texto-promo">
-                <h2>La mejor variedad en platillos de comida mexicana</h2>
-                <p>Contamos con <u>servicio</u> a <span class="color-naranja">domicilio</span></p>
+    <main class="contenedor-principal">
+        <div class="contenedor-img">
+            <div class="texto">
+                <p>Soporte y Soluciones</p>
+                <h2>Tecnologia que impulsa tu negocio</h2>
+                <p>Soporte, desarrollo y asesoria informatica para empresas y personas</p>  
+                <button class="Servicios">Ver Servicios</button>
             </div>
-
             <!-- Se agregó la imagen inicial en src -->
-            <img id="imagen-principal" src="static/images/comida-mexicana.jpg" alt="Platillo principal"
-                onmouseover="cambiarImagen()" onmouseout="imagenOriginal()">
+            <img id="imagen-principal" src="static/images/imgtec.jpg" alt="img">
         </div>
-
-        <div class="seccion-recomendados">
-            <h3>Recomendados:</h3>
-
-            <div class="tarjeta">
-                <img src="static/images/orden-tacos.jpg" alt="Orden de Tacos" class="img-recomendado">
-                <div class="info-tarjeta">
-                    <div>
-                        <strong>Orden de Tacos</strong><br>
-                        <a href="#">Ver Más...</a>
-                    </div>
-                    <!-- Se agregó onclick="sumarCarrito()" -->
-                    <button class="btn-mas" onclick="sumarCarrito()">+</button>
-                </div>
+        <section class="mas-servicios">
+            <h2>Nuestros Servicios</h2>
+            <div>
+                <img src="" alt="tec">
+                <h3>Soporte Tecnico</h3>
+                <p>Mantencion, diagnostico 
+                <span>y soluciones rapidas.</span></p>
+                <button>Ver mas</button>
             </div>
-
-            <div class="tarjeta">
-                <img src="static/images/orden-flautas.jpg" alt="Orden de Flautas" class="img-recomendado">
-                <div class="info-tarjeta">
-                    <div>
-                        <strong>Orden de Flautas</strong><br>
-                        <a href="#">Ver Más...</a>
-                    </div>
-                    <!-- Se agregó onclick="sumarCarrito()" -->
-                    <button class="btn-mas" onclick="sumarCarrito()">+</button>
-                </div>
+            <div>
+                <img src="" alt="">
+                <h3>Redes y Conectividad</h3>
+                <p>Instalacion y con</p>
             </div>
-        </div>
+            <div></div>
+            <div></div>
+        </section>
+
     </main>
 
     <script src="static/js/script.js"></script>

@@ -17,17 +17,17 @@ header {
     padding: 10px 40px;
     background-color: #ffffff;
 }
-
+.contenedor-principal{
+    padding: 60px;
+}
 .descripcion{
-    font-size: 10px;
+    font-size: 15px;
     display: flex;
-
-    
+    color: #929494;
 }
 .links{
     display: flex;
-    gap: 20px;
-    padding: 10px;
+    gap: 75px;
     margin-left: 200px;
 }
 .links a{
@@ -66,7 +66,8 @@ header {
     border: 0.5px solid #c2c5cb;
     border-radius: 1px;
     font-size: 13px;
-    width: 149px;
+    width: 249px;
+    padding: 15px,
 }
 
 .btn-login {
@@ -81,132 +82,42 @@ header {
 }
 
 
-/* --- Menú de Categorías (Alineado con el contenido de abajo) --- */
-.menu {
-    background-color: #fdebd0;
+/*COntenedor principal*/
+.contenedor-img {
+    background-color: #f6f8f8;
     display: flex;
-    justify-content: space-between; /* Distribuye los 6 elementos de extremo a extremo */
+
     align-items: center;
-    max-width: 1100px;              /* Mismo ancho máximo que el main */
-    margin: 20px auto 0 auto;       /* Centrado horizontalmente */
-    padding: 15px 20px;             /* Mismo padding lateral que main */
 }
 
-.item-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
+.texto h2 {
+    font-size: 40px;
     font-weight: bold;
-    color: #333333;
-}
-
-.img-menu {
-    width: 10px;                   /* Imágenes más grandes */
-    height: 100px;                  /* Alto aumentado */
-    object-fit: cover;
-    margin-bottom: 6px;
-}
-
-/* --- Contenido Principal --- */
-main {
-    display: flex;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 20px;
-    gap: 30px;
-}
-
-/* Banner Gris */
-.seccion-gris {
-    flex: 2.2;
-    background-color: #cccccc;
-    display: flex;
-    padding: 30px 25px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.texto-promo {
-    flex: 1;
-    padding-right: 15px;
-}
-
-.texto-promo h2 {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 500;
     color: #222222;
     margin-bottom: 25px;
 }
 
-.texto-promo p {
+.texto p {
     font-size: 20px;
-    line-height: 1.2;
-    color: #222222;
+    color: #5a5c5d;
 }
 
 #imagen-principal {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    flex-shrink: 0;
-    cursor: pointer;
-}
-
-/* Recomendados */
-.seccion-recomendados {
-    flex: 1;
-}
-
-.seccion-recomendados h3 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #000000;
-}
-
-.tarjeta {
-    margin-bottom: 25px;
-}
-
-.img-recomendado {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    display: block;
-}
-
-.info-tarjeta {
+    width: 850px;
+    height: 450px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 6px;
+    border-radius:10px ;
 }
-
-.info-tarjeta strong {
-    font-size: 13px;
-    color: #333333;
-}
-
-.info-tarjeta a {
-    font-size: 12px;
-    color: #0044cc;
-    text-decoration: underline;
-}
-
-.btn-mas {
-    background-color: #ff5500;
-    color: #ffffff;
-    border: none;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1;
-    cursor: pointer;
+.Servicios{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    width: 160px;
+    height: 40px;
     justify-content: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
 }
