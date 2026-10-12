@@ -10,59 +10,153 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="static/images/compu.png" alt="Compu" class="img-logo">
+    <header class="cabecera-principal">
+        <div class="logo-contenedor">
+            <img src="static/images/compu.png" alt="Compu" class="imagen-logo">
             <div>
-                <span class="color-negro">Tech</span><span class="color-azul">Plus</span>
-                <p class="descripcion">Soluciones Informaticas</p>
+                <span class="texto-negro">Tech</span><span class="texto-azul">Plus</span>
+                <p class="descripcion-logo">Soluciones Informaticas</p>
             </div>
-            <div class="links">
+            <div class="enlaces-navegacion">
                 <a href="#">Inicio</a>
                 <a href="#">Servicios</a>
                 <a href="#">Proyectos</a>
                 <a href="#">Contacto</a>
             </div>
         </div>
-        <div class="controles">
-            <!-- Se agregó id="correo" -->
+        <div class="controles-busqueda">
             <input type="text" id="correo" placeholder="Buscar Servicios">
-            <!-- Se agregó onclick="mostrarCorreo()" -->
-            <button class="btn-login" onclick="mostrarCorreo()"> Buscar</button>
+            <button class="boton-buscar" onclick="mostrarCorreo()"> Buscar</button>
         </div>
     </header>
+
     <main class="contenedor-principal">
-        <div class="contenedor-img">
-            <div class="texto">
+        <div class="bloque-banner">
+            <div class="texto-banner">
                 <p>Soporte y Soluciones</p>
                 <h2>Tecnologia que impulsa tu negocio</h2>
                 <p>Soporte, desarrollo y asesoria informatica para empresas y personas</p>  
-                <button class="Servicios">Ver Servicios</button>
+                <button class="boton-servicios">Ver Servicios</button>
             </div>
-            <!-- Se agregó la imagen inicial en src -->
-            <img id="imagen-principal" src="static/images/imgtec.jpg" alt="img">
+            
+            <!-- Carrusel con display flex básico -->
+            <div class="envoltorio-carrusel">
+                <div class="carrusel">
+                    <button class="btn-carrusel anterior">&#10094;</button>
+                    <img id="imagen-principal" src="static/images/imgtec.jpg" alt="img">
+                    <button class="btn-carrusel siguiente">&#10095;</button>
+                </div>
+                <div class="descripcion-carrusel">Soporte técnico en terreno</div>
+                <div class="puntos-carrusel">
+                    <span class="punto activo"></span>
+                    <span class="punto"></span>
+                    <span class="punto"></span>
+                </div>
+            </div>
         </div>
-        <section class="mas-servicios">
+
+        <!-- Nuestros Servicios (Con display flex) -->
+        <section class="seccion-servicios">
             <h2>Nuestros Servicios</h2>
-            <div>
-                <img src="" alt="tec">
-                <h3>Soporte Tecnico</h3>
-                <p>Mantencion, diagnostico 
-                <span>y soluciones rapidas.</span></p>
-                <button>Ver mas</button>
+            <div class="contenedor-servicios">
+                <div class="tarjeta-servicio">
+                    <img src="static/images/soporte.jfif" alt="tec" class="imagen-servicio">
+                    <h3>Soporte Tecnico</h3>
+                    <p>Mantencion, diagnostico <span>y soluciones rapidas.</span></p>
+                    <button class="boton-tarjeta">Ver mas</button>
+                </div>
+                <div class="tarjeta-servicio">
+                    <img src="static/images/conectividad.jfif" alt="redes" class="imagen-servicio">
+                    <h3>Redes y Conectividad</h3>
+                    <p>Instalacion y configuracion de redes corporativas.</p>
+                    <button class="boton-tarjeta">Ver mas</button>
+                </div>
+                <div class="tarjeta-servicio">
+                    <img src="static/images/desarrollo.jfif" alt="desarrollo" class="imagen-servicio">
+                    <h3>Desarrollo web</h3>
+                    <p>Sitios web modernos y funcionales.</p>
+                    <button class="boton-tarjeta">Ver mas</button>
+                </div>
+                <div class="tarjeta-servicio">
+                    <img src="static/images/seguridad.jfif" alt="seguridad" class="imagen-servicio">
+                    <h3>Seguridad informatica</h3>
+                    <p>Proteccion de datos y asesoria en ciberseguridad.</p>
+                    <button class="boton-tarjeta">Ver mas</button>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Redes y Conectividad</h3>
-                <p>Instalacion y con</p>
+        </section>
+
+        <!-- Últimos Proyectos (Con display flex) -->
+        <section class="seccion-proyectos">
+            <div class="cabecera-proyectos">
+                <h2>Últimos proyectos</h2>
+                <a href="#" class="enlace-ver-todos">Ver todos &rarr;</a>
             </div>
-            <div></div>
-            <div></div>
+            <div class="contenedor-proyectos">
+                <div class="tarjeta-proyecto" data-titulo="Clínica Vida" data-desc="Sitio web corporativo con formulario de contacto y agendamiento de citas médicas.">
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="static/images/proyecto1.jpg" alt="Clínica Vida" class="imagen-proyecto">
+                        <span class="etiqueta-categoria">Sitio web</span>
+                        <button class="boton-me-gusta"><span class="icono-corazon">&hearts;</span> <span class="contador-likes">24</span></button>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <h3>Clínica Vida</h3>
+                        <p>Sitio web corporativo con formulario de contacto.</p>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto" data-titulo="Comercial Norte" data-desc="Implementación completa de red corporativa segura, firewall y cámaras de seguridad.">
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="static/images/proyecto2.jpg" alt="Comercial Norte" class="imagen-proyecto">
+                        <span class="etiqueta-categoria">Redes</span>
+                        <button class="boton-me-gusta"><span class="icono-corazon">&hearts;</span> <span class="contador-likes">17</span></button>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <h3>Comercial Norte</h3>
+                        <p>Implementación de red y seguridad.</p>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto" data-titulo="Colegio Los Robles" data-desc="Mantención preventiva y correctiva de equipos de computación y soporte técnico en terreno.">
+                    <div class="contenedor-imagen-proyecto">
+                        <img src="static/images/proyecto3.jpg" alt="Colegio Los Robles" class="imagen-proyecto">
+                        <span class="etiqueta-categoria">Soporte</span>
+                        <button class="boton-me-gusta"><span class="icono-corazon">&hearts;</span> <span class="contador-likes">31</span></button>
+                    </div>
+                    <div class="informacion-proyecto">
+                        <h3>Colegio Los Robles</h3>
+                        <p>Mantención y soporte técnico.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
+    <!-- Modal para detalle de proyecto -->
+    <div id="modal-proyecto" class="ventana-modal">
+        <div class="contenido-modal">
+            <span class="cerrar-modal">&times;</span>
+            <h2 id="titulo-modal">Título</h2>
+            <p id="descripcion-modal">Descripción...</p>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="logo-contenedor">
+            <img src="static/images/compu.png" alt="Compu" class="imagen-logo">
+            <div>
+                <span class="texto-negro">Tech</span><span class="texto-azul">Plus</span>
+                <p class="descripcion-logo">Soluciones Informaticas</p>
+            </div>
+        </div>
+        <div class="enlaces-pie">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </footer>
+
     <script src="static/js/script.js"></script>
 </body>
 
-</html>
+</html> 

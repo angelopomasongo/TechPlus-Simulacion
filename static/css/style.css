@@ -10,105 +10,153 @@ body {
     color: #1a1a1a;
 }
 
-/* --- Header --- */
-header {
+/* --- Cabecera --- */
+.cabecera-principal {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
     background-color: #ffffff;
+    align-items: center;
 }
 .contenedor-principal{
-    padding: 60px;
+    padding: 40px 60px;
 }
-.descripcion{
-    font-size: 15px;
-    display: flex;
-    color: #929494;
+.descripcion-logo{
+    font-size: 13px;
+    color: #5a5c5d;
 }
-.links{
+.enlaces-navegacion{
     display: flex;
     gap: 75px;
     margin-left: 200px;
 }
-.links a{
+.enlaces-navegacion a{
     font-size: 15px;
     text-decoration: none;
+    color: #333;
 }
-.logo {
+.logo-contenedor {
     display: flex;
     align-items: center;
     font-size: 30px;
     font-weight: 550;
 }
 
-.img-logo {
+.imagen-logo {
     width: 58px;
     height: auto;
     margin-right: 6px;
 }
 
-.color-negro {
+.texto-negro {
     color: #000000;
 }
 
-.color-azul {
+.texto-azul {
     color: blue;
 }
 
-.controles {
+.controles-busqueda {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.controles input {
-    padding: 4px 8px;
+.controles-busqueda input {
+    padding: 12px 8px;
     border: 0.5px solid #c2c5cb;
-    border-radius: 1px;
+    border-radius: 2px;
     font-size: 13px;
     width: 249px;
-    padding: 15px,
 }
 
-.btn-login {
+.boton-buscar {
     background-color: #005df5;
     color: #ffffff;
     border: none;
-    padding: 5px 14px;
+    padding: 12px 14px;
     font-size: 13px;
     border-radius: 2px;
     cursor: pointer;
     font-weight: bold;
 }
 
-
-/*COntenedor principal*/
-.contenedor-img {
+/* --- Banner principal --- */
+.bloque-banner {
     background-color: #f6f8f8;
     display: flex;
-
     align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.texto h2 {
+.texto-banner h2 {
     font-size: 40px;
     font-weight: bold;
     color: #222222;
     margin-bottom: 25px;
 }
 
-.texto p {
+.texto-banner p {
     font-size: 20px;
     color: #5a5c5d;
 }
 
-#imagen-principal {
-    width: 850px;
-    height: 450px;
+/* Carrusel con display flex básico */
+.envoltorio-carrusel {
     display: flex;
-    border-radius:10px ;
+    flex-direction: column;
+    align-items: center;
 }
-.Servicios{
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#imagen-principal {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-carrusel {
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.descripcion-carrusel {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.puntos-carrusel {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.punto.activo {
+    background-color: #333;
+}
+
+.boton-servicios{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -117,7 +165,223 @@ header {
     width: 160px;
     height: 40px;
     justify-content: center;
+    align-items: center;
     border-radius: 7px;
     font-size: 18px;
     font-weight: 550;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Sección Servicios (Con display flex) --- */
+.seccion-servicios {
+    margin-top: 50px;
+}
+
+.seccion-servicios > h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tarjeta-servicio {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    background: #fff;
+}
+
+.imagen-servicio {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #eaeaea;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+
+.tarjeta-servicio p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.boton-tarjeta {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+}
+
+/* --- Últimos Proyectos (Con display flex) --- */
+.seccion-proyectos {
+    margin-top: 50px;
+}
+
+.cabecera-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cabecera-proyectos h2 {
+    font-size: 26px;
+}
+
+.enlace-ver-todos {
+    color: #005df5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tarjeta-proyecto {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+}
+
+.contenedor-imagen-proyecto {
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #333;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.etiqueta-categoria {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 3px 8px;
+    font-size: 11px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.boton-me-gusta {
+    background: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.icono-corazon {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.boton-me-gusta.liked .icono-corazon {
+    color: #ff3b30;
+}
+
+.informacion-proyecto {
+    padding: 15px;
+}
+
+.informacion-proyecto h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.informacion-proyecto p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* --- Ventana Modal --- */
+.ventana-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 350px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* --- Pie de página --- */
+.pie-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 50px;
+}
+
+.pie-pagina .descripcion-logo {
+    color: #aaa;
+}
+
+.enlaces-pie {
+    display: flex;
+    gap: 25px;
+}
+
+.enlaces-pie a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
